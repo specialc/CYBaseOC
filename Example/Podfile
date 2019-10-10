@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CYBaseOC_Example' do
+  pod 'CYBaseOC', :path => '../'
+
+  target 'CYBaseOC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
