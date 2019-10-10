@@ -1,0 +1,6 @@
+framework module CYBaseOC {
+  umbrella header "CYBaseOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
