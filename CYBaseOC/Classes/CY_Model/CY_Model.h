@@ -9,7 +9,7 @@
  *  返回值反射对象
  */
 
-#import <JSONModel/JSONModel.h>
+#import "JSONModel.h"
 
 @interface CY_Model : JSONModel
 @property (nonatomic, assign) BOOL isCache;
