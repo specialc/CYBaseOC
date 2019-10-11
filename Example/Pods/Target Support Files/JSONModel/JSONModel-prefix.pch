@@ -10,9 +10,3 @@
 #endif
 #endif
 
-#import "CY_Lib.h"
-#import "CY_Model.h"
-
-FOUNDATION_EXPORT double CYBaseOCVersionNumber;
-FOUNDATION_EXPORT const unsigned char CYBaseOCVersionString[];
-

@@ -1,16 +1,23 @@
 PODS:
-  - CYBaseOC (0.1.0)
+  - CYBaseOC (0.1.2):
+    - JSONModel (~> 1.7.0)
+  - JSONModel (1.7.0)
 
 DEPENDENCIES:
   - CYBaseOC (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - JSONModel
 
 EXTERNAL SOURCES:
   CYBaseOC:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CYBaseOC: 3aa677eb85c41d56994460d9c28794df64f21e51
+  CYBaseOC: f2f3105ab8e475d05fb205245f8719b75d54324a
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
 
 PODFILE CHECKSUM: c7af71bb692a794df9f69f22b044a46161226dec
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3
