@@ -23,7 +23,7 @@ pod 'CYBaseOC'
 
 ## Author
 
-787984594@qq.com, 2248895786@qq.com
+
 
 ## License
 
