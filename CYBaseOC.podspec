@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CYBaseOC'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CYBaseOC.'
+  s.summary          = '基础类'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/787984594@qq.com/CYBaseOC'
+  s.homepage         = 'https://github.com/specialc/CYBaseOC.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '787984594@qq.com' => '2248895786@qq.com' }
-  s.source           = { :git => 'https://github.com/787984594@qq.com/CYBaseOC.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/specialc/CYBaseOC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
