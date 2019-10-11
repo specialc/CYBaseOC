@@ -9,7 +9,6 @@
  *  返回值反射对象
  */
 
-//#import "JSONModel.h"
 #import <Foundation/Foundation.h>
 
 @interface CY_Model : NSObject
