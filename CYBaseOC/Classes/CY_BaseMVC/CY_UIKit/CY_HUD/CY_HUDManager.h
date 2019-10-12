@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CY_InfoHUDView.h"
 #import "SVProgressHUD.h"
-//#import "CY_Lib.h"
+#import "CY_Lib.h"
 
 @interface CY_HUDManager : NSObject
 
