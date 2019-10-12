@@ -58,7 +58,8 @@
 //        NSString *path = [imageBundle pathForResource:@"angle-mask" ofType:@"png"];
 //
 //        maskLayer.contents = (__bridge id)[[UIImage imageWithContentsOfFile:path] CGImage];
-        maskLayer.contents = (__bridge id)[[UIImage imageNamed:@"angle-mask"] CGImage];
+//        maskLayer.contents = (__bridge id)[[UIImage imageNamed:@"angle-mask"] CGImage];
+        maskLayer.contents = (__bridge id)[@"#000000".cc_color.cc_solidImage CGImage];
         
         maskLayer.frame = _indefiniteAnimatedLayer.bounds;
         _indefiniteAnimatedLayer.mask = maskLayer;
