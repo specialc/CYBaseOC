@@ -379,6 +379,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
         UIImage* successImage = @"#000000".cc_color.cc_solidImage;
         UIImage* errorImage = @"#000000".cc_color.cc_solidImage;
         
+        
         if ([[UIImage class] instancesRespondToSelector:@selector(imageWithRenderingMode:)]) {
             _infoImage = [infoImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
             _successImage = [successImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
