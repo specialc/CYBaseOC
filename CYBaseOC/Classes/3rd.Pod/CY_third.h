@@ -10,6 +10,5 @@
 #define CY_third_h
 
 #import <YYText/YYText.h>
-#import "FXBlurView.h"
 
 #endif /* CY_third_h */

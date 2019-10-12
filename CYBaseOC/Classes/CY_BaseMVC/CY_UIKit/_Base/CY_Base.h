@@ -18,6 +18,7 @@
 #pragma mark - CY_View
 #import "CY_BaseView.h"
 #import "CY_Control.h"
+#import "FXBlurView.h"
 #import "CY_BlurView.h"
 #import "CY_BaseLabel.h"
 #import "CY_ImageView.h"

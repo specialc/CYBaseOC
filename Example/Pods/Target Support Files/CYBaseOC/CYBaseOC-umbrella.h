@@ -11,7 +11,6 @@
 #endif
 
 #import "CY_third.h"
-#import "FXBlurView.h"
 #import "SVIndefiniteAnimatedView.h"
 #import "SVProgressAnimatedView.h"
 #import "SVProgressHUD.h"
@@ -90,6 +89,7 @@
 #import "CY_BaseView.h"
 #import "CY_BlurView.h"
 #import "CY_Control.h"
+#import "FXBlurView.h"
 #import "CY_3rdLibCategory.h"
 #import "CY_Forbearance.h"
 #import "CY_MASForbearance.h"
