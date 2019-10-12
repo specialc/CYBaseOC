@@ -9,6 +9,6 @@
 #ifndef CY_third_h
 #define CY_third_h
 
-#import "YYText.h"
+#import <YYText/YYText.h>
 
 #endif /* CY_third_h */
