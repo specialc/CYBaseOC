@@ -365,13 +365,17 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
             _font = [UIFont systemFontOfSize:14.0f];
         }
         
-        NSBundle *bundle = [NSBundle bundleForClass:[SVProgressHUD class]];
-        NSURL *url = [bundle URLForResource:@"SVProgressHUD" withExtension:@"bundle"];
-        NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+//        NSBundle *bundle = [NSBundle bundleForClass:[SVProgressHUD class]];
+//        NSURL *url = [bundle URLForResource:@"SVProgressHUD" withExtension:@"bundle"];
+//        NSBundle *imageBundle = [NSBundle bundleWithURL:url];
         
-        UIImage* infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"info" ofType:@"png"]];
-        UIImage* successImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"success" ofType:@"png"]];
-        UIImage* errorImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"error" ofType:@"png"]];
+//        UIImage* infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"info" ofType:@"png"]];
+//        UIImage* successImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"success" ofType:@"png"]];
+//        UIImage* errorImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"error" ofType:@"png"]];
+        UIImage* infoImage = [UIImage imageNamed:@"info"];
+        UIImage* successImage = [UIImage imageNamed:@"success"];
+        UIImage* errorImage = [UIImage imageNamed:@"error"];
+        
         
         if ([[UIImage class] instancesRespondToSelector:@selector(imageWithRenderingMode:)]) {
             _infoImage = [infoImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];

@@ -1,6 +1,6 @@
 {
   "name": "CYBaseOC",
-  "version": "0.1.11",
+  "version": "0.1.13",
   "summary": "基础类",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/specialc/CYBaseOC.git",
@@ -13,12 +13,17 @@
   },
   "source": {
     "git": "https://github.com/specialc/CYBaseOC.git",
-    "tag": "0.1.11"
+    "tag": "0.1.13"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "CYBaseOC/Classes/**/*",
+  "resource_bundles": {
+    "CYBaseOC": [
+      "CYBaseOC/Assets/*.png"
+    ]
+  },
   "dependencies": {
     "JSONModel": [
       "~> 1.8.0"

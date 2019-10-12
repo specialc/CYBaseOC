@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CYBaseOC (0.1.11):
+  - CYBaseOC (0.1.13):
     - AFNetworking (~> 3.2.1)
     - GCDWebServer (~> 3.4.2)
     - HMSegmentedControl (~> 1.5.5)
@@ -86,7 +86,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CYBaseOC: d4624471667b155d4fa7ffb4b6f5bb42e139936d
+  CYBaseOC: e36d363b8f54162dbfde67d370851e364ca5b9da
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
