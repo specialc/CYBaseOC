@@ -10,6 +10,8 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "CY_Category.h"
+#import "CY_Lib.h"
 
 @interface UIButton (CY_Handle)
 

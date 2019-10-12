@@ -7,6 +7,7 @@
 //
 
 #import "CY_TableViewCell.h"
+#import "CY_Lib.h"
 
 typedef NS_ENUM(NSUInteger, CY_IconPosition) {
     CY_IconPositionLeftTop,

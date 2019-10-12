@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CY_FilterPointer.h"
+#import "CY_Lib.h"
 
 @interface CY_FilterControl : UIControl
 @property (nonatomic, strong) NSArray *titles;

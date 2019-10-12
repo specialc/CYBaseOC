@@ -8,6 +8,7 @@
 
 #import "CY_BaseViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "CY_Lib.h"
 
 @interface CY_WebViewController : CY_BaseViewController <UIWebViewDelegate>
 

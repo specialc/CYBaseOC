@@ -10,6 +10,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 // 如果需要关掉兼容中文的打印，把下面的宏注释掉即可
 #define UseLogChinese

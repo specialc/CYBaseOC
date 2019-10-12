@@ -7,6 +7,7 @@
 //
 
 #import "CY_TableViewCell.h"
+#import "CY_Lib.h"
 
 @interface CY_SeparatorLayerCell : CY_TableViewCell
 @property (nonatomic, assign) CGFloat cc_cellHeight;

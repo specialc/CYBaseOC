@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CY_NavigationControllerServices.h"
+#import "CY_Lib.h"
 
 @interface CY_NavigationControllerServicesImpl : NSObject <CY_NavigationControllerServices>
 

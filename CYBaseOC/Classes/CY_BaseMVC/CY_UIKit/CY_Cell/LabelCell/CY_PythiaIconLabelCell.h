@@ -7,6 +7,7 @@
 //
 
 #import "CY_PythiaLabelCell.h"
+#import "CY_Lib.h"
 
 @interface CY_PythiaIconLabelCell : CY_PythiaLabelCell
 

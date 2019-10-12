@@ -11,6 +11,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 struct CY_DateDetail {
     NSInteger year;

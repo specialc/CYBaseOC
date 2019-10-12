@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @interface NSArray<ObjectType> (CY_Suger)
 

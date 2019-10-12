@@ -10,6 +10,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @interface CY_Settings : NSObject
 + (instancetype)shared;

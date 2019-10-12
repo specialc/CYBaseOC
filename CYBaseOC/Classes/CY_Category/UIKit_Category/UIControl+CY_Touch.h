@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 @interface UIControl (CY_Touch)
 @property (nonatomic, copy) void(^touchUpInsideAction)(UIButton *sender);

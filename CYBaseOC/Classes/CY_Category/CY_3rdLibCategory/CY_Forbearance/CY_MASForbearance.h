@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 typedef NS_OPTIONS(NSUInteger, CY_MASForbearanceRule) {
     CY_MASForbearanceRule_Horizontal     = 0x01 << 0,

@@ -10,6 +10,7 @@
  */
 
 #import <JSONModel/JSONModel.h>
+#import "CY_Lib.h"
 
 @interface CY_Model : JSONModel
 @property (nonatomic, assign) BOOL isCache;

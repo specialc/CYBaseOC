@@ -18,7 +18,7 @@
         
         CGRect imageRect = self.imageView.frame;
         CGRect titleRect = self.titleLabel.frame;
-#warning CYTest Padding是否应该*2
+        // CYTest Padding是否应该*2
         CGFloat totalHeight = imageRect.size.height + padding + titleRect.size.height;
         CGFloat selfHeight = self.frame.size.height;
         CGFloat selfWidth = self.frame.size.width;

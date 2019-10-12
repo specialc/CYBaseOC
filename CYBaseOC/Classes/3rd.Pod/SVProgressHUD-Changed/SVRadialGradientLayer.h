@@ -6,6 +6,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import "CY_Lib.h"
 
 @interface SVRadialGradientLayer : CALayer
 

@@ -8,6 +8,7 @@
 
 #import "CY_TableViewCell.h"
 #import "CY_PythiaLinkString.h"
+#import "CY_Lib.h"
 
 @class CY_PythiaProtocolCell;
 

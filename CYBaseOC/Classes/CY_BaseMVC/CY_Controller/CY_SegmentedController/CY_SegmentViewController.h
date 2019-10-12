@@ -8,6 +8,7 @@
 
 #import "CY_BaseViewController.h"
 #import "CY_SegmentControlProtocol.h"
+#import "CY_Lib.h"
 
 @protocol CY_SegmentControllerChildViewControllerProtocol <NSObject>
 

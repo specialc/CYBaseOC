@@ -10,6 +10,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 #pragma mark - CY_ResponseResult
 

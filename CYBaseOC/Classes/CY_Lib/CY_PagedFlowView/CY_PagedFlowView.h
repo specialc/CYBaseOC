@@ -18,6 +18,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CY_PagedFlowViewItem.h"
+#import "CY_Lib.h"
 
 @class CY_PagedFlowView;
 

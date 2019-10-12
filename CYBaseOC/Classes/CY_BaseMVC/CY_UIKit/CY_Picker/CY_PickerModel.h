@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @interface CY_PickerModel : NSObject
 @property (nonatomic, copy) NSString *key;

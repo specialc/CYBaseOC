@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 @interface UITableView (CY_TemplateLayoutCell)
 - (CGFloat)cc_heightForCellWithStaticCell:(UITableViewCell *)staticCell configuration:(void (^)(id cell))configuration;

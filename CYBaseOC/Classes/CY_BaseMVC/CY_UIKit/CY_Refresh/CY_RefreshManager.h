@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 typedef NS_ENUM(NSUInteger, CY_RefreshHeaderType) {
     CY_RefreshHeaderType_Normal,

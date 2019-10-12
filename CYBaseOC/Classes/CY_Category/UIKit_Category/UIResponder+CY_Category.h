@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 @interface UIResponder (CY_Category)
 + (id)cc_currentFirstResponder;

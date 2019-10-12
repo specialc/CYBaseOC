@@ -10,6 +10,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 @interface UIView (CY_Category)
 

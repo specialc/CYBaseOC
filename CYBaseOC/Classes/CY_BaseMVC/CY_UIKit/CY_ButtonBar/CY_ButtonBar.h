@@ -7,6 +7,7 @@
 //
 
 #import "CY_BaseView.h"
+#import "CY_Lib.h"
 
 @interface CY_ButtonBar : CY_BaseView
 

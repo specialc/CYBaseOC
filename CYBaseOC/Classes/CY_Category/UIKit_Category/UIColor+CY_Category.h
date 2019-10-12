@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 #define CC_ColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \

@@ -7,6 +7,7 @@
 //
 
 #import "CY_BaseTextField.h"
+#import "CY_Lib.h"
 
 @interface CY_NormalTextField : CY_BaseTextField
 

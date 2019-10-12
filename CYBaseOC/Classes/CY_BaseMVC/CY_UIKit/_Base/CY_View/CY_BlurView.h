@@ -7,6 +7,7 @@
 //
 
 #import "FXBlurView.h"
+#import "CY_Lib.h"
 
 @interface CY_BlurView : FXBlurView <CY_BaseViewProtocol>
 

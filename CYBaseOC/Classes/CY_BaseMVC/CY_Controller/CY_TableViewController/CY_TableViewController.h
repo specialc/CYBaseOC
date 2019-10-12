@@ -11,6 +11,7 @@
 
 #import "CY_BaseViewController.h"
 #import "CY_RefreshManager.h"
+#import "CY_Lib.h"
 
 @interface CY_TableViewController : CY_BaseViewController <CY_RefreshDelegate, UITableViewDataSource, CY_TableViewDelegate>
 

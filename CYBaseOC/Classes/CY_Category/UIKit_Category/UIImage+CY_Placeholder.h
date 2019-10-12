@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 typedef NS_ENUM(NSInteger, CC_GradientLocation) {
     CC_GradientLocation_TopToBottom,           // 从上到下

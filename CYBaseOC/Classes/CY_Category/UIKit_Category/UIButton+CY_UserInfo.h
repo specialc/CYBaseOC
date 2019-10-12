@@ -10,6 +10,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 @interface UIButton (CY_UserInfo)
 @property (nonatomic, strong) id userInfo;

@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CY_ResponseResult.h"
+#import "CY_Lib.h"
 
 @interface CY_RequestManagerResponseHandler : NSObject
 

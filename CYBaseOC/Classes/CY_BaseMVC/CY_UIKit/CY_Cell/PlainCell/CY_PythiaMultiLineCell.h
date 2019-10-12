@@ -7,6 +7,7 @@
 //
 
 #import "CY_TableViewCell.h"
+#import "CY_Lib.h"
 
 @interface CY_PythiaMultiLineCell : CY_TableViewCell
 

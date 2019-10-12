@@ -9,6 +9,7 @@
 #import "CY_BaseView.h"
 #import "CY_NavBarStyle.h"
 #import "CY_BaseLabel.h"
+#import "CY_Lib.h"
 
 @protocol CY_NavBarDelegate <NSObject>
 

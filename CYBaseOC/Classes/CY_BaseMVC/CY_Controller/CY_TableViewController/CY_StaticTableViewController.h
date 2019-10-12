@@ -12,6 +12,7 @@
 #import "CY_TableViewController.h"
 #import "CY_PythiaSeparatorLineCell.h"
 #import "CY_SeparatorLayerCell.h"
+#import "CY_Lib.h"
 
 @interface CY_StaticTableViewController : CY_TableViewController
 

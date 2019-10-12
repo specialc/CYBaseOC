@@ -7,6 +7,7 @@
 //
 
 #import "CY_TableViewCell.h"
+#import "CY_Lib.h"
 
 @interface CY_SeparatorLineCell : CY_TableViewCell
 @property (nonatomic, assign) CGFloat cc_leftMargin;

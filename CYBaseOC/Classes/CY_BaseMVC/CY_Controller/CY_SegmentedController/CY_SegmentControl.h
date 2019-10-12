@@ -8,7 +8,7 @@
 
 #import <HMSegmentedControl/HMSegmentedControl.h>
 #import "CY_SegmentControlProtocol.h"
-
+#import "CY_Lib.h"
 
 @interface CY_SegmentControl : HMSegmentedControl <CY_SegmentControlProtocol>
 

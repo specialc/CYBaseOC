@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CY_NavigationProtocol.h"
+#import "CY_Lib.h"
 
 @protocol CY_NavigationControllerServices <NSObject, CY_NavigationProtocol>
 

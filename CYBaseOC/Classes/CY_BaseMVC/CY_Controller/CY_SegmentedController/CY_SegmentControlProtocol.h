@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 typedef void (^CY_SegmentControlIndexChangeBlock)(NSInteger index);
 

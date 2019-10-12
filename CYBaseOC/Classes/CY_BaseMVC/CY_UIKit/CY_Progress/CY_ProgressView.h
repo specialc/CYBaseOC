@@ -7,6 +7,7 @@
 //
 
 #import "CY_BaseView.h"
+#import "CY_Lib.h"
 
 @interface CY_ProgressView : CY_BaseView
 @property (nonatomic, strong) UIColor *progressColor;

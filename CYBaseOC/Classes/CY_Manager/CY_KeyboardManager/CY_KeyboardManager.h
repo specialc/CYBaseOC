@@ -10,6 +10,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @class CY_KeyboardManager;
 @protocol CY_KeyboardManagerDelegate <NSObject>

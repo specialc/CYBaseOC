@@ -7,6 +7,7 @@
 //
 
 #import "CY_TableViewCell.h"
+#import "CY_Lib.h"
 
 @interface CY_PythiaEmptyCell : CY_TableViewCell
 @property (nonatomic, weak) UIImageView *iconImageView;

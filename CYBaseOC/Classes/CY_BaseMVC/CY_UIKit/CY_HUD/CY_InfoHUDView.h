@@ -7,6 +7,7 @@
 //
 
 #import "CY_BaseView.h"
+#import "CY_Lib.h"
 
 // 浮层提示
 @interface CY_InfoHUDView : CY_BaseView

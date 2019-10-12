@@ -10,6 +10,7 @@
 #import "CY_TableViewCell.h"
 #import "UITableView+CY_TemplateLayoutCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "CY_Lib.h"
 
 @class CY_TableView;
 

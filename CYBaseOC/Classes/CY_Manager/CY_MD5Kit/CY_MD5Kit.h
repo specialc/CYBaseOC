@@ -10,6 +10,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 #define FileHashDefaultChunkSizeForReadingData 1024*8 // 8k
 

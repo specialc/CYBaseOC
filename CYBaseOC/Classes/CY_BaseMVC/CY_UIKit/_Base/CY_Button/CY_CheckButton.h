@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 @interface CY_CheckButton : UIButton
 @property (nonatomic, assign, getter=isChecked) BOOL cc_checked;

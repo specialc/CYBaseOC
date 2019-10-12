@@ -7,6 +7,7 @@
 //
 
 #import "CY_BaseTextField.h"
+#import "CY_Lib.h"
 
 #pragma mark - CY_AmountTextFieldHelper
 

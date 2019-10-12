@@ -7,6 +7,7 @@
 //
 
 #import "CY_TableViewController.h"
+#import "CY_Lib.h"
 
 @protocol CY_ReuseTableViewProtocol <NSObject>
 

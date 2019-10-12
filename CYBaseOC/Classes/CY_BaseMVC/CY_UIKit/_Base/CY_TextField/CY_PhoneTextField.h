@@ -7,6 +7,7 @@
 //
 
 #import "CY_BaseTextField.h"
+#import "CY_Lib.h"
 
 @interface CY_PhoneTextField : CY_BaseTextField
 @property (nonatomic, weak) id<UITextFieldDelegate> cc_phoneTextFieldDelegate;

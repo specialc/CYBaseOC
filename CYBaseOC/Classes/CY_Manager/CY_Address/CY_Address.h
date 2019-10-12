@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @class CY_AddressProvince, CY_AddressCity, CY_AddressArea;
 

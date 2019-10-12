@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 #define kCY_AlertNormalTitle @"温馨提示"
 

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @interface CY_RichString : NSObject
 @property (nonatomic, copy) NSString *string;

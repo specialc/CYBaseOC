@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CY_NavigationProtocol.h"
+#import "CY_Lib.h"
 
 @interface NSObject (CY_NavigationServices)
 @property (nonatomic, weak, readonly) id<CY_NavigationProtocol> navigationServices;

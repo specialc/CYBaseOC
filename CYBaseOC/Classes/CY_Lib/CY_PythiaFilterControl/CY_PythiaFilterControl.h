@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CY_PythiaFilterPointer.h"
+#import "CY_Lib.h"
 
 @interface CY_PythiaFilterControl : UIControl
 

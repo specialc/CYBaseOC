@@ -10,6 +10,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 // 统一的接口缓存
 @interface CY_RequestCache : NSObject

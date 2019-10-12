@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "CY_Lib.h"
 
 @interface CY_JSFunction : NSObject
 + (NSString *)createFunctionWithBody:(NSString *)body argsName:(NSString *)argsName, ...;

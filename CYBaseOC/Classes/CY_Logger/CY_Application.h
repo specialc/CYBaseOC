@@ -18,6 +18,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "CY_Lib.h"
 
 @interface CY_Application : UIApplication
 

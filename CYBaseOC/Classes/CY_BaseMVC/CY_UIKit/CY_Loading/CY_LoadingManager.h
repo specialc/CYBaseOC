@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CY_LoadingViewProtocol.h"
+#import "CY_Lib.h"
 
 typedef NS_ENUM(NSInteger, CY_LoadingType) {
     CY_LoadingType_WCF,

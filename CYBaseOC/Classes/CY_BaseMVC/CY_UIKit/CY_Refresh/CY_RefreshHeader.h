@@ -7,7 +7,7 @@
 //
 
 #import "MJRefreshStateHeader.h"
-
+#import "CY_Lib.h"
 
 @interface CY_RefreshHeader : MJRefreshStateHeader
 

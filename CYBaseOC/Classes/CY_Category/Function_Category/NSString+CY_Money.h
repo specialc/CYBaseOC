@@ -11,6 +11,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @interface NSString (CY_Money)
 

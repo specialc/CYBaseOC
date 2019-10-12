@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 static NSString *kPythiaURLErrorDomain = @"com.weicaifu.wcf";
 static NSInteger kURLNormalErrorCode = -9;

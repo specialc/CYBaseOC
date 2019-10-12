@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CY_Lib.h"
 
 @protocol CY_LoadingViewProtocol <NSObject>
 

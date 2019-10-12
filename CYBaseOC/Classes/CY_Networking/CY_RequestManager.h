@@ -15,6 +15,7 @@
 #import "CY_RequestManagerResponseHandler.h"
 #import "CY_RequestParameters.h"
 #import "CY_ResponseResult.h"
+#import "CY_Lib.h"
 
 typedef NS_ENUM(NSUInteger, CY_RequestManagerStatus) {
     CY_RequestManagerStatus_Run,  // 接口调用中
