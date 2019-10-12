@@ -137,7 +137,6 @@
 #import "CY_PythiaFilterControl.h"
 #import "CY_PythiaFilterPointer.h"
 #import "CY_Application.h"
-#import "CY_Logger.h"
 #import "CY_Address.h"
 #import "CY_APPInfo.h"
 #import "CY_Equation.h"
