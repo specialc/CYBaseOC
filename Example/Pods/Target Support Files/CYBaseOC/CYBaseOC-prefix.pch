@@ -10,3 +10,6 @@
 #endif
 #endif
 
+#ifdef __OBJC__
+#import "CY_Lib.h"    //CY_Lib包含了所有头文件
+#endif

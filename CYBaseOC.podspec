@@ -37,6 +37,11 @@ TODO: Add long description of the pod here.
   }
   
 #  s.prefix_header_file = 'CYBaseOC-prefix.pch'
+  s.prefix_header_contents = <<-EOS
+   #ifdef __OBJC__
+   #import "CY_Lib.h"    //CY_Lib包含了所有头文件
+   #endif
+  EOS
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

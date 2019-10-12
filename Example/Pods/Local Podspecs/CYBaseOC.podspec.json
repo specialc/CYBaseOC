@@ -1,6 +1,6 @@
 {
   "name": "CYBaseOC",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "summary": "基础类",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/specialc/CYBaseOC.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/specialc/CYBaseOC.git",
-    "tag": "0.1.18"
+    "tag": "0.1.19"
   },
   "platforms": {
     "ios": "8.0"
@@ -24,6 +24,7 @@
       "CYBaseOC/Assets/*.png"
     ]
   },
+  "prefix_header_contents": "#ifdef __OBJC__\n#import \"CY_Lib.h\"    //CY_Lib包含了所有头文件\n#endif",
   "dependencies": {
     "JSONModel": [
       "~> 1.8.0"
