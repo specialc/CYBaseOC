@@ -150,7 +150,7 @@
 // 将要出现
 - (void)delegateChildViewWillAppearAtIndex:(NSInteger)index {
     UIViewController<CY_SegmentControllerChildViewControllerProtocol> *vc = (id)self.cc_viewControllers[index];
-    LogWarning(@"-CY_childViewWillAppear");
+//    LogWarning(@"-CY_childViewWillAppear");
     if ([vc respondsToSelector:@selector(cc_childViewWillAppear)]) {
         [vc cc_childViewWillAppear];
     }
@@ -159,7 +159,7 @@
 // 将要消失
 - (void)delegateChildViewWillDisappearAtIndex:(NSInteger)index {
     UIViewController *vc = self.cc_viewControllers[index];
-    LogWarning(@"-CY_childViewWillDisappear");
+//    LogWarning(@"-CY_childViewWillDisappear");
     if ([vc respondsToSelector:@selector(cc_childViewWillDisappear)]) {
         [vc performSelector:@selector(cc_childViewWillDisappear)];
     }
@@ -168,7 +168,7 @@
 // 将要改变
 - (void)delegateSelectedIndexDidChange:(NSInteger)index {
     UIViewController *vc = self.cc_viewControllers[index];
-    LogWarning(@"-cc_selectedIndexDidChange");
+//    LogWarning(@"-cc_selectedIndexDidChange");
     if ([vc respondsToSelector:@selector(cc_selectedIndexDidChange)]) {
         [vc performSelector:@selector(cc_selectedIndexDidChange)];
     }

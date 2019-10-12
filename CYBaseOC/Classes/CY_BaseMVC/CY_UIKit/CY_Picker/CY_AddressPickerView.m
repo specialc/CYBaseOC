@@ -123,7 +123,7 @@
             return 0;
         }
     } @catch (NSException *exception) {
-        LogError(@"%@", exception);
+//        LogError(@"%@", exception);
         return 0;
     } @finally {
         
@@ -149,7 +149,7 @@
             return @"出错".cc_localizedString;
         }
     } @catch (NSException *exception) {
-        LogError(@"%@",exception);
+//        LogError(@"%@",exception);
         return @"出错".cc_localizedString;
     } @finally {
         

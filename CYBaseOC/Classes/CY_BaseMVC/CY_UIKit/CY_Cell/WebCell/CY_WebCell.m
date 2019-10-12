@@ -61,8 +61,8 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     // LogInfo(@"WebView Height -> \tRequest: %@", request);
-    LogInfo(@"WebView Height -> \tURL: %@", request.URL);
-    LogInfo(@"WebView Height -> \tFragment: %@", request.URL.fragment);
+//    LogInfo(@"WebView Height -> \tURL: %@", request.URL);
+//    LogInfo(@"WebView Height -> \tFragment: %@", request.URL.fragment);
     
     CGFloat height = [request.URL.fragment floatValue];
     if (!request.URL.fragment) {
@@ -91,7 +91,7 @@
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    LogError(@"%@", error);
+//    LogError(@"%@", error);
 }
 
 - (void)evaluatingJSWithWebView:(UIWebView *)webView {
@@ -99,19 +99,19 @@
         if ([[webView stringByEvaluatingJavaScriptFromString:@"document.readyState"] isEqualToString:@"complete"]) {
             self.loadCompleted = YES;
             [self mountJavaScriptAtWebView:webView];
-            LogSuccess(@"mountJSScriptAtWebView执行成功");
+//            LogSuccess(@"mountJSScriptAtWebView执行成功");
         }
         else {
             // 资源过多的问题，导致document.readyState == interactive
-            LogWarning(@"需要延迟获取document.readyState");
+//            LogWarning(@"需要延迟获取document.readyState");
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 if ([[webView stringByEvaluatingJavaScriptFromString:@"document.readyState"] isEqualToString:@"complete"]) {
                     self.loadCompleted = YES;
                     [self mountJavaScriptAtWebView:webView];
-                    LogSuccess(@"mountJSScriptAtWebView执行成功");
+//                    LogSuccess(@"mountJSScriptAtWebView执行成功");
                 }
                 else {
-                    LogError(@"mountJSScriptAtWebView未执行");
+//                    LogError(@"mountJSScriptAtWebView未执行");
                 }
             });
         }
@@ -121,7 +121,7 @@
 - (void)mountJavaScriptAtWebView:(UIWebView *)webView {
     self.context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     self.context.exceptionHandler = ^(JSContext *context, JSValue *exception) {
-        LogError(@"JS Error: %@", exception);
+//        LogError(@"JS Error: %@", exception);
     };
     
     CC_WeakSelf
@@ -137,7 +137,7 @@
         JSValue *value = args.firstObject;
         NSString *URLString = [value toString];
         
-        LogInfo(@"URLString:%@", URLString);
+//        LogInfo(@"URLString:%@", URLString);
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf gotoWebInterfaceWithURLString:URLString];
         });

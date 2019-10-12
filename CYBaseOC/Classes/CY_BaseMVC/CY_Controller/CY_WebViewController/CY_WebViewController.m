@@ -133,16 +133,16 @@
 #pragma mark - UIWebViewDelegate
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    LogInfo(@"UIWebView准备加载: %s %@", __FUNCTION__, request);
+//    LogInfo(@"UIWebView准备加载: %s %@", __FUNCTION__, request);
     return YES;
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    LogInfo(@"UIWebView开始加载: %s %@", __FUNCTION__, webView.request);
+//    LogInfo(@"UIWebView开始加载: %s %@", __FUNCTION__, webView.request);
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    LogInfo(@"UIWebView加载完毕: %s %@", __FUNCTION__, webView.request);
+//    LogInfo(@"UIWebView加载完毕: %s %@", __FUNCTION__, webView.request);
     if (self.isAutoTitle) {
         NSString *title = [self.cc_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
         self.title = title;
@@ -155,7 +155,7 @@
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    LogError(@"UIWebView加载失败: %s %@", __FUNCTION__, error);
+//    LogError(@"UIWebView加载失败: %s %@", __FUNCTION__, error);
 }
 
 #pragma mark - Methods
@@ -179,7 +179,7 @@
 - (void)mountJavaScriptAtWebView:(UIWebView *)webView {
     self.context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     self.context.exceptionHandler = ^(JSContext *context, JSValue *exception) {
-        LogError(@"JS Error: %@", exception);
+//        LogError(@"JS Error: %@", exception);
     };
     
     for (NSString *key in self.javaScriptObservers.allKeys) {
@@ -190,7 +190,7 @@
         }
         
         self.context[key] = ^{
-            LogError(@"%@", [NSThread currentThread]);
+//            LogError(@"%@", [NSThread currentThread]);
             JSValue *this = [JSContext currentThis];
             NSArray *args = [JSContext currentArguments];
             dispatch_async(dispatch_get_main_queue(), ^{

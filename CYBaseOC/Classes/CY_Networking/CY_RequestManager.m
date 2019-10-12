@@ -112,7 +112,7 @@
 
 - (NSURLSessionDataTask *)requestWithMethod:(CY_RequestMethod)method success:(CY_RequestManagerCompleted)success failure:(CY_RequestManagerFailure)failure {
     if (self.isPrintLog) {
-        LogBackTrace(@"请求调用堆栈");
+//        LogBackTrace(@"请求调用堆栈");
     }
     
     // 如果有缓存
@@ -122,7 +122,7 @@
             NSDictionary *cacheResponseObj = [CY_RequestCache dataForKey:key];
             if (cacheResponseObj) {
                 if (self.isPrintLog) {
-                    LogDebug(@"\n获取缓存内容：%@", self.requestPath);
+//                    LogDebug(@"\n获取缓存内容：%@", self.requestPath);
                 }
                 [self POSTSuccessFinish:nil response:cacheResponseObj success:success failure:failure];
             }
@@ -142,11 +142,11 @@
     NSTimeInterval timeoutInterval = self.timeoutInterval;
     
     if (self.isPrintLog) {
-        LogWarning(@"请求者：[%@.m:0]", NSStringFromClass([self class]));
-        LogWarning(@"反射类：[%@.m:0]", self.responseClass);
-        LogWarning(@"URL：%@", URLString);
-        LogWarning(@"Full URL：%@?%@", URLString, [requestParameters query]);
-        LogWarning(@"\n requestPath：%@ \n 请求方式：%@ \n Parameters：%@", requestPath, method == CY_RequestMethod_GET ? @"GET" : @"POST", requestParameters);
+//        LogWarning(@"请求者：[%@.m:0]", NSStringFromClass([self class]));
+//        LogWarning(@"反射类：[%@.m:0]", self.responseClass);
+//        LogWarning(@"URL：%@", URLString);
+//        LogWarning(@"Full URL：%@?%@", URLString, [requestParameters query]);
+//        LogWarning(@"\n requestPath：%@ \n 请求方式：%@ \n Parameters：%@", requestPath, method == CY_RequestMethod_GET ? @"GET" : @"POST", requestParameters);
     }
     
     self.requestManager.requestSerializer.timeoutInterval = timeoutInterval;
@@ -157,20 +157,20 @@
     void(^SuccessBlock)(NSURLSessionDataTask *task, id responseObject) = ^(NSURLSessionDataTask *task, id responseObject) {
         @try {
             if (self.isPrintLog) {
-                LogSuccess(@"\n 请求成功 \n 地址：%@ \n requestPath：%@ \n Response：%@", URLString, requestPath, responseObject);
+//                LogSuccess(@"\n 请求成功 \n 地址：%@ \n requestPath：%@ \n Response：%@", URLString, requestPath, responseObject);
                 [CY_RequestManager postRequestOverNotification];
                 [self POSTSuccessFinish:task response:responseObject success:success failure:failure];
             }
         } @catch (NSException *exception) {
             @try {
                 if (self.isPrintLog) {
-                    LogSuccess(@"\n 接口请求成功了，但是Crash了：%@", exception);
+//                    LogSuccess(@"\n 接口请求成功了，但是Crash了：%@", exception);
                 }
                 NSError *error = [NSError cc_errorWithCode:0 msg:@"Crash"];
                 [self POSTFailureFinish:task error:error failureBlock:failure];
             } @catch (NSException *exception) {
                 if (self.isPrintLog) {
-                    LogSuccess(@"\n 请求代码崩溃，返回代码也崩溃了：%@", exception);
+//                    LogSuccess(@"\n 请求代码崩溃，返回代码也崩溃了：%@", exception);
                 }
             } @finally {
                 
@@ -183,13 +183,13 @@
     void(^FailureBlock)(NSURLSessionDataTask *task, NSError *error) = ^(NSURLSessionDataTask *task, NSError *error) {
         @try {
             if (self.isPrintLog) {
-                LogFailure(@"\n 接口请求失败 \n 地址：%@ \n requestPath：%@ \n Error：%@", URLString, requestPath, error);
+//                LogFailure(@"\n 接口请求失败 \n 地址：%@ \n requestPath：%@ \n Error：%@", URLString, requestPath, error);
             }
             [CY_RequestManager postRequestOverNotification];
             [self POSTFailureFinish:task error:error failureBlock:failure];
         } @catch (NSException *exception) {
             if (self.isPrintLog) {
-                LogSuccess(@"\n 接口请求失败，代码Crash：%@", exception);
+//                LogSuccess(@"\n 接口请求失败，代码Crash：%@", exception);
             }
         } @finally {
             
@@ -273,7 +273,7 @@
     // 服务器升级
     if (result.status == CY_ResponseStatus_ServerUpgrading) {
         if (self.isPrintLog) {
-            LogError(@">>>>>>>>>>>>>>>> 服务器升级");
+//            LogError(@">>>>>>>>>>>>>>>> 服务器升级");
         }
         [CY_RequestManager postServerUpgradingNotificationWithMessage:result.message];
     }
@@ -284,7 +284,7 @@
     // 成功状态
     if (result.status == CY_ResponseStatus_Success) {
         if (self.isPrintLog) {
-            LogError(@">>>>>>>>>>>>>>>> 返回成功");
+//            LogError(@">>>>>>>>>>>>>>>> 返回成功");
         }
         
         // 保存缓存
@@ -292,7 +292,7 @@
             NSString *key = [self key];
             [CY_RequestCache storeData:responseObject forKey:key];
             if (self.isPrintLog) {
-                LogSuccess(@"接口缓存成功：%@", self.requestPath);
+//                LogSuccess(@"接口缓存成功：%@", self.requestPath);
             }
         }
         if (success) {
@@ -303,7 +303,7 @@
     // Session过期
     else if (result.status == CY_ResponseStatus_SessionTimeout) {
         if (self.isPrintLog) {
-            LogError(@">>>>>>>>>>>>>>>> Session过期");
+//            LogError(@">>>>>>>>>>>>>>>> Session过期");
         }
         // 通知Session过期
         [CY_RequestManager postSessionTimeoutNotification];
@@ -311,13 +311,13 @@
     // 失败状态
     else if (result.status == CY_ResponseStatus_Failure) {
         if (self.isPrintLog) {
-            LogError(@">>>>>>>>>>>>>>>> 返回失败");
+//            LogError(@">>>>>>>>>>>>>>>> 返回失败");
         }
     }
     // 接口调用情况不明
     else {
         if (self.isPrintLog) {
-            LogError(@">>>>>>>>>>>>>>>> 接口调用情况不明%ld", result.code);
+//            LogError(@">>>>>>>>>>>>>>>> 接口调用情况不明%ld", result.code);
         }
     }
     

@@ -8,10 +8,10 @@
 
 #import "CY_FileStorage.h"
 
-#define CY_FSPrintRestoreSuccess LogSuccess(@"读取成功");
-#define CY_FSPrintRestoreFailure LogFailure(@"读取失败");
-#define CY_FSPrintStoreSuccess() LogSuccess(@"保存成功");
-#define CY_FSPrintStoreFailure(msg) LogFailure(@"保存失败：%@", msg);
+//#define CY_FSPrintRestoreSuccess LogSuccess(@"读取成功");
+//#define CY_FSPrintRestoreFailure LogFailure(@"读取失败");
+//#define CY_FSPrintStoreSuccess() LogSuccess(@"保存成功");
+//#define CY_FSPrintStoreFailure(msg) LogFailure(@"保存失败：%@", msg);
 
 static inline NSString *DocumentDirectoryPath() {
     return NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;
@@ -55,10 +55,10 @@ static inline NSString *FileStoragePath() {
         [aData writeToFile:fileFullPathName atomically:YES encoding:NSUTF8StringEncoding error:&error];
     }
     if (error == nil) {
-        CY_FSPrintStoreSuccess();
+//        CY_FSPrintStoreSuccess();
     }
     else {
-        CY_FSPrintStoreFailure(error.localizedDescription);
+//        CY_FSPrintStoreFailure(error.localizedDescription);
     }
     return error == nil;
 }
@@ -83,7 +83,7 @@ static inline NSString *FileStoragePath() {
     NSString *fileFullPathName = [self fileFullPathNameWithFileName:fileName];
     // 查无此文件
     if (![[NSFileManager defaultManager] fileExistsAtPath:fileFullPathName]) {
-        LogFailure(@"无此文件");
+//        LogFailure(@"无此文件");
         return nil;
     }
     
@@ -102,10 +102,10 @@ static inline NSString *FileStoragePath() {
     }
     
     if (aData) {
-        CY_FSPrintRestoreSuccess
+//        CY_FSPrintRestoreSuccess
     }
     else {
-        CY_FSPrintRestoreFailure;
+//        CY_FSPrintRestoreFailure;
     }
     return aData;
 }

@@ -109,7 +109,7 @@
     // [UIImagePNGRepresentation(imagesave) writeToFile:imagePath atomically:YES];
     NSError *error;
     BOOL flag = [UIImagePNGRepresentation(imageSave) writeToFile:imagePath options:NSDataWritingAtomic error:&error];
-    LogWarning(@"保存图片%@", flag ? @"成功" : @"失败");
+//    LogWarning(@"保存图片%@", flag ? @"成功" : @"失败");
 }
     
 // 等比缩放图片

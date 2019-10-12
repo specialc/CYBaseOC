@@ -15,7 +15,7 @@
 @implementation CY_BaseViewController
 
 - (void)dealloc {
-    LogSuccess(@"%@ [%@.m:0] Dealloc.", self, NSStringFromClass([self class]));
+//    LogSuccess(@"%@ [%@.m:0] Dealloc.", self, NSStringFromClass([self class]));
 }
 
 #pragma mark - 生命周期
@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
     NSString *className = NSStringFromClass([self class]);
-    LogSuccess(@"%@ [%@.m:0] viewDidLoad.", self, className);
+//    LogSuccess(@"%@ [%@.m:0] viewDidLoad.", self, className);
     
     [self cc_loadNavigationBar];
     [self cc_loadViews];

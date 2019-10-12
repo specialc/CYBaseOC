@@ -33,11 +33,11 @@
             UIView *v4 = event.allTouches.anyObject.view.superview.superview.superview;
 #pragma clang diagnostic pop
             
-            LogInfo(@"打印点击的View所在的UIViewController：[%@.m:0] - 点击的View[%@.m:0] <- [%@.m:0] <- [%@.m:0]", NSStringFromClass(v.class), NSStringFromClass(event.allTouches.anyObject.view.class), NSStringFromClass(event.allTouches.anyObject.view.superview.class), NSStringFromClass(event.allTouches.anyObject.view.superview.superview.class));
+//            LogInfo(@"打印点击的View所在的UIViewController：[%@.m:0] - 点击的View[%@.m:0] <- [%@.m:0] <- [%@.m:0]", NSStringFromClass(v.class), NSStringFromClass(event.allTouches.anyObject.view.class), NSStringFromClass(event.allTouches.anyObject.view.superview.class), NSStringFromClass(event.allTouches.anyObject.view.superview.superview.class));
             break;
         }
         else if ([v isKindOfClass:[UIWindow class]]) {
-            LogInfo(@"打印点击的View所在的UIWindow：[%@.m:0] - 点击的View[%@.m:0] <- [%@.m:0] <- [%@.m:0]", NSStringFromClass(v.class), NSStringFromClass(event.allTouches.anyObject.view.class), NSStringFromClass(event.allTouches.anyObject.view.superview.class), NSStringFromClass(event.allTouches.anyObject.view.superview.superview.class));
+//            LogInfo(@"打印点击的View所在的UIWindow：[%@.m:0] - 点击的View[%@.m:0] <- [%@.m:0] <- [%@.m:0]", NSStringFromClass(v.class), NSStringFromClass(event.allTouches.anyObject.view.class), NSStringFromClass(event.allTouches.anyObject.view.superview.class), NSStringFromClass(event.allTouches.anyObject.view.superview.superview.class));
             break;
         }
         
