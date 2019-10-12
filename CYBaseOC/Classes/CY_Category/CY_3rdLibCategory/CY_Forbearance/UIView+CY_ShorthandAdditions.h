@@ -11,6 +11,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <Masonry/Masonry.h>
 
 @interface MAS_VIEW (CY_ShorthandAdditions)
 - (NSArray *)makeConstraints:(void(^)(MASConstraintMaker *make))block;

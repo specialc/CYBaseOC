@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Masonry/Masonry.h>
+
 /**
  *    Shorthand array additions without the 'mas_' prefixes,
  *  only enabled if MAS_SHORTHAND is defined
