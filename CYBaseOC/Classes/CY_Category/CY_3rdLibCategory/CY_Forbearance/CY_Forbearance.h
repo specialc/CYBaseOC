@@ -17,4 +17,11 @@
 #import "UIView+CY_Forbearance.h"
 #import "UIView+CY_ShorthandAdditions.h"
 
+
+#define equalTo(...)                     mas_equalTo(__VA_ARGS__)
+#define greaterThanOrEqualTo(...)        mas_greaterThanOrEqualTo(__VA_ARGS__)
+#define lessThanOrEqualTo(...)           mas_lessThanOrEqualTo(__VA_ARGS__)
+#define offset(...)                      mas_offset(__VA_ARGS__)
+
+
 #endif /* CY_Forbearance_h */

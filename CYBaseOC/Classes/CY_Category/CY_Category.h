@@ -14,7 +14,6 @@
 #import "NSArray+CY_Suger.h"
 #import "NSDate+CY_Category.h"
 #import "NSDictionary+CY_LogCategory.h"
-#import "NSError+CY_Net.h"
 #import "NSError+CY_Network.h"
 #import "NSString+CY_MD5.h"
 #import "NSString+CY_Method.h"

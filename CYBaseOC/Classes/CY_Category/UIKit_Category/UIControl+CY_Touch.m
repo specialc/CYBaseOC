@@ -7,6 +7,7 @@
 //
 
 #import "UIControl+CY_Touch.h"
+#import <objc/runtime.h>
 
 @implementation UIControl (CY_Touch)
 

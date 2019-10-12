@@ -21,7 +21,40 @@
   "source_files": "CYBaseOC/Classes/**/*",
   "dependencies": {
     "JSONModel": [
+      "~> 1.8.0"
+    ],
+    "Masonry": [
 
+    ],
+    "MJRefresh": [
+
+    ],
+    "SDWebImage": [
+      "~> 5.0"
+    ],
+    "YYImage": [
+
+    ],
+    "YYText": [
+      "~> 1.0.7"
+    ],
+    "AFNetworking": [
+      "~> 3.2.1"
+    ],
+    "HMSegmentedControl": [
+      "~> 1.5.5"
+    ],
+    "NJKWebViewProgress": [
+      "~> 0.2.3"
+    ],
+    "YBImageBrowser": [
+      "~> 2.2.0"
+    ],
+    "SVGAPlayer": [
+      "~> 2.1.3"
+    ],
+    "GCDWebServer": [
+      "~> 3.4.2"
     ]
   }
 }

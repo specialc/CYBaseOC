@@ -7,7 +7,7 @@
 //
 
 #import "CY_TableViewCell.h"
-#import "HMSegmentedControl.h"
+#import <HMSegmentedControl/HMSegmentedControl.h>
 
 @interface CY_WexSegmentedCell : CY_TableViewCell
 @property (nonatomic, strong) NSArray *cc_sectionTitles;

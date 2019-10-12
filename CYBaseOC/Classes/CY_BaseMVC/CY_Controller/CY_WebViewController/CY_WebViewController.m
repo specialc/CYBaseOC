@@ -7,7 +7,7 @@
 //
 
 #import "CY_WebViewController.h"
-#import "NJKWebViewProgress.h"
+#import <NJKWebViewProgress/NJKWebViewProgress.h>
 #import "NJKWebViewProgressView.h"
 
 @interface CY_WebViewController () <UIWebViewDelegate, NJKWebViewProgressDelegate>

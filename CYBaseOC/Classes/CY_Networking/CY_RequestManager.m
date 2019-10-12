@@ -166,7 +166,7 @@
                 if (self.isPrintLog) {
                     LogSuccess(@"\n 接口请求成功了，但是Crash了：%@", exception);
                 }
-                NSError *error = [NSError errorWithCode:0 msg:@"Crash"];
+                NSError *error = [NSError cc_errorWithCode:0 msg:@"Crash"];
                 [self POSTFailureFinish:task error:error failureBlock:failure];
             } @catch (NSException *exception) {
                 if (self.isPrintLog) {

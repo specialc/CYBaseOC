@@ -6,7 +6,7 @@
 //  Copyright © 2019 CY. All rights reserved.
 //
 
-#import "HMSegmentedControl.h"
+#import <HMSegmentedControl/HMSegmentedControl.h>
 #import "CY_SegmentControlProtocol.h"
 
 

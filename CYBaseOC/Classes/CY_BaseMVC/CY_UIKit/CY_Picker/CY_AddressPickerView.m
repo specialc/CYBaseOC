@@ -200,7 +200,7 @@
     }
 }
 
-- (void)hadnleDone:(UIButton *)sender {
+- (void)handleDone:(UIButton *)sender {
     if (self.delegate && [self.delegate respondsToSelector:@selector(cc_addressPickerView:didSelectDoneWithAddress:)]) {
         [self.delegate cc_addressPickerView:self didSelectDoneWithAddress:self.address];
     }

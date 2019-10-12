@@ -41,7 +41,7 @@
 }
 
 - (NSError *)error {
-    return [NSError errorWithCode:self.code msg:self.errorMessage];
+    return [NSError cc_errorWithCode:self.code msg:self.errorMessage];
 }
 
 @end
